@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.root {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 98vh;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background: none;
+  outline: none;
+  padding: 1px 20px;
+  height: 42px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.5s;
+  border: 1px solid black;
+  min-width: 103px;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+}
+
+main {
+  display: flex;
+}
+
+main > section:first-child {
+  width: 50%;
+}
+
+.self-desc {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+.self-desc > span {
+  background: blueviolet;
+  padding: 10px 20px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.name {
+  font-size: 3.5rem;
+  margin-top: 13px;
+}
+
+.hire-me {
+  background: red;
+  border: 1px solid red;
+  color: white;
+}
+
+.hire-me:hover {
+  background: none;
+  color: black;
+}
+
+footer {
+  background: black;
+  opacity: 0.9;
+  color: white;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin-left: -17%;
+  margin-right: -16.5%;
+}
+
+footer > ul {
+  list-style: none;
+  width: 35%;
+  float: right;
+}
+
+footer > ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    display: block;
+  }
+
+  main > section:first-child {
+    width: 100%;
+  }
+
+  main > section:last-child {
+    margin-top: 35px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  footer > ul {
+    width: 66%;
+  }
+}
+
+/** COPIED FROM W3SCHOOLS.COM **/
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/** COPIED FROM W3SCHOOLS.COM **/
